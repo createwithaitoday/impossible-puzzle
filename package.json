@@ -1,0 +1,37 @@
+{
+  "name": "impossible-puzzle",
+  "version": "1.0.0",
+  "private": true,
+  "description": "IMPOSSIBLE — an optical-illusion perspective puzzle.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 43201 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 43201 --strictPort",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "icons": "node scripts/make-icons.mjs",
+    "play:listing": "node scripts/play-upload-listing.mjs",
+    "play:aab": "node scripts/play-upload-aab.mjs",
+    "android:sync": "npm run build && cap sync android",
+    "android:bundle": "npm run android:sync && cd android && gradlew.bat bundleRelease"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/core": "^8.5.3",
+    "@capacitor/splash-screen": "^8.0.2",
+    "@capacitor/status-bar": "^8.0.4",
+    "@fontsource/archivo-black": "^5.2.5",
+    "@fontsource/space-grotesk": "^5.2.8"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^8.5.3",
+    "@capacitor/cli": "^8.5.3",
+    "googleapis": "^188.0.0",
+    "sharp": "^0.34.2",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vitest": "^3.2.4"
+  }
+}
