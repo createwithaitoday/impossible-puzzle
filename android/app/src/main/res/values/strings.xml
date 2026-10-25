@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">IMPOSSIBLE</string>
+    <string name="title_activity_main">IMPOSSIBLE</string>
+    <string name="package_name">com.impossible.puzzle</string>
+    <string name="custom_url_scheme">com.impossible.puzzle</string>
+</resources>
